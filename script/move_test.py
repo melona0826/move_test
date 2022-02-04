@@ -27,7 +27,6 @@ def main() :
     print("Initalize Robot Pose...")
     joint_goal = [-0.34350759187807256, -0.9218924681292933, -2.0065024534808558, -1.522297207509176, 1.63822603225708, -0.2967131773578089]
     move_group.go(joint_goal , wait = True)
-    move_group.stop()
 
     print("Is Robot can move freely ? Safe is important !")
     inp = raw_input("Go ? y/n :")[0]
